@@ -1,2 +1,0 @@
-# josecruzchavez.github.io
-Website
