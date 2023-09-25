@@ -3,45 +3,229 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-              theme: {
-                extend: {
-                  colors: {
-                    clifford: '#da373d',
-                  }
-                }
-              }
-            }
-        </script>
 
-        <title>José Cruz Chavez | FullStack Magento 2</title>
+        <title>José Cruz Chavez | Full Stack Magento 2</title>
+
+        <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+        <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+        <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/custom.css" rel="stylesheet">
+
+        <script src="assets/js/jquery.min.js"></script>
 
     </head>
-    <body>
-        <div>
-            <h1 class="text-3xl font-bold underline text-clifford">
-                Hello world!
-            </h1>
+    <body class="main-page">
+        <div class="container-fluid pt-4 pb-5">
+
+            <section class="img-profile text-center p-3">
+                <picture>
+                    <img class="rounded-circle shadow-4-strong" alt="avatar1" src="assets/media/jose_cruz_chavez.jpg" />
+                </picture>
+            </section>
+
+            <section class="bio mb-3">
+                <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">José Cruz Chávez</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Full Stack Magento 2, Technical Lead, Gestión Digital Web</h6>
+                      <p class="card-text">Programación, diseño y soporte profesional para Magento 2 para particulares y pymes.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="social media d-grid gap-3">
+
+                    <a class="btn btn-gdw-white btn-round" href="#" data-aside="servicios">
+                        <span class="icon"><i class="fa-solid fa-list-check"></i></span>
+                        <span class="text">Servicios</span>
+                        <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+
+                    <a class="btn btn-gdw-white btn-round" href="#" data-aside="asesoria">
+                        <span class="icon"><i class="fa-solid fa-hand-holding-dollar"></i></span>
+                        <span class="text">Asesoria</span>
+                        <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+
+                    <a class="btn btn-gdw-white btn-round" href="https://gdw.mx" target="_blank">
+                        <span class="icon"><i class="fa-brands fa-magento"></i></span>
+                        <span class="text">Sitio Web</span>
+                        <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+
+                    <a class="btn btn-gdw-white btn-round" href="https://www.linkedin.com/in/jose-cruz-chavez/" target="_blank">
+                        <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+                        <span class="text">LinkedIn</span>
+                        <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+
+                    <a class="btn btn-gdw-white btn-round" href="https://github.com/josecruzchavez" target="_blank">
+                        <span class="icon"><i class="fa-brands fa-github"></i></span>
+                        <span class="text">GitHub</span>
+                        <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+
+                    <a class="btn btn-gdw-white btn-round" href="https://wa.me/+525635650541" target="_blank" style="color:#0f887b;">
+                        <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+                        <span class="text">Whatsapp Business</span>
+                        <span class="fa-solid fa-arrow-right"></span>
+                    </a>
+            </section>
+
+            <section class="content-aside servicios">
+                <div class="container-fluid">
+                    <div class="p-2">
+                        <div class="close" style="float:right;">
+                            <a href="#" class="close-aside"><i class="fa-regular fa-circle-xmark"></i></a>
+                        </div>
+                        <div class="content pt-3 pb-3">
+                                
+                            <h3 class="card-title pt-3 pb-3">Servicios</h3>
+                            
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                          <h5 class="card-title"><i class="fa-brands fa-magento"></i> Soporte</h5>
+                                          <p class="card-text">Planes mensuales de soporte y mantenimiento integral de su e-commerce actual.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                          <h5 class="card-title"><i class="fa-brands fa-magento"></i> Desarrollo Personalizado</h5>
+                                          <p class="card-text">Modificaciones, actualizaciones o ampliaciones backend y frontend puntuales que necesite para su e-commerce.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                          <h5 class="card-title"><i class="fa-brands fa-magento"></i> Inicia tu e-commerce</h5>
+                                          <p class="card-text">Desarrollo integral de e-commerce desde cero.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                          <h5 class="card-title"><i class="fa-brands fa-magento"></i> Integraciones</h5>
+                                          <p class="card-text"> Integración de su e-commerce con su sistema de gestión, ERPs, CRMs, App mobile, Mercado Libre, Zoho o cualquier otro sistema externo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                          <h5 class="card-title"><i class="fa-brands fa-magento"></i> Optimizaciones</h5>
+                                          <p class="card-text">En performance y SEO.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                          <h5 class="card-title"><i class="fa-brands fa-magento"></i> Auditorias</h5>
+                                          <p class="card-text">Auditorias de seguridad. Solución de problemas y recuperación.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </section>
+
+            <section class="content-aside asesoria">
+                <div class="container-fluid">
+                    <div class="p-2">
+                        <div class="close" style="float:right;">
+                            <a href="#" class="close-aside"><i class="fa-regular fa-circle-xmark"></i></a>
+                        </div>
+                        <div class="content pt-3 pb-3">
+                                
+                            <h3 class="card-title pt-3 pb-3">Asesoría y Soporte x Hr. </h3>
+
+                            <div class="row">
+
+                                <div class="col-12 mb-3">
+                                    <div class="pt-3 pb-3">
+                                        Asesoría para Magento 2, resulve tus dudas o recibe ayuda en la integración o desarrollo que te encuentres realizando, la asesoría puede ser de backend, frontend o integraciones.                                    
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <ul class="list-group">
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <div class="info">
+                                                        <h5 class="mb-1 align-items-center"><i class="fa-brands fa-magento" style="font-size:80%; padding-right:10px;"></i> 1 Hora</h5>
+                                                        <div>$1,200.00 MXN</div>
+                                                    </div>
+                                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QR97JDAAJZ5V6" class="btn btn-block btn-outline-magento" target="_blank">Reservar</a>                                                  
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                    <div class="info">
+                                                        <h5 class="mb-1 align-items-center"><i class="fa-brands fa-magento" style="font-size:80%; padding-right:10px;"></i> 5 Horas</h5>
+                                                        <div>$5,500.00 MXN</div>
+                                                    </div>
+                                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=UCZLZY89H7QAL" class="btn btn-block btn-outline-magento" target="_blank">Reservar</a>                                                  
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center" style="display:none !important;">
+                                                    <div class="info">
+                                                        <h5 class="mb-1 align-items-center"><i class="fa-brands fa-magento" style="font-size:80%; padding-right:10px;"></i> 15 Horas</h5>
+                                                        <div>$15,000.00 MXN</div>
+                                                    </div>
+                                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HT87KKDQQCD9S" class="btn btn-block btn-outline-magento" target="_blank">Reservar</a>
+                                                </li>
+                                                <li class="list-group-item d-flex justify-content-between align-items-center" style="display:none !important;">
+                                                    <div class="info">
+                                                        <h5 class="mb-1 align-items-center"><i class="fa-brands fa-magento" style="font-size:80%; padding-right:10px;"></i> 20 Horas</h5>
+                                                        <div>$18,000.00 MXN</div>
+                                                    </div>
+                                                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8WYHDL8GF3WGC" class="btn btn-block btn-outline-magento" target="_blank">Reservar</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 mb-3">
+                                    <h5 class="mb-3 mt-3"><i class="fa-brands fa-magento"></i> Temas principales</h5>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Nuevos Módulos</li>
+                                        <li class="list-group-item">Tareas cron</li>
+                                        <li class="list-group-item">Plugins</li>
+                                        <li class="list-group-item">Observadores</li>
+                                        <li class="list-group-item">Sobreescrituras</li>
+                                        <li class="list-group-item">Extensiones de funciones</li>
+                                        <li class="list-group-item">Configuración de entorno en Windows, Mac, Linux</li>
+                                        <li class="list-group-item">Layout</li>
+                                        <li class="list-group-item">Bloques</li>
+                                        <li class="list-group-item">Pasarelas de pago</li>
+                                        <li class="list-group-item">Métodos de envío</li>
+                                        <li class="list-group-item">Impuestos</li>
+                                        <li class="list-group-item">Divisas</li>
+                                        <li class="list-group-item">Multi Stock Inventory</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </section>
         </div>
-        <section class="img-profile">
-
-        </section>
-
-        <section class="social media">
-            <div>
-                <a href="btn">Asesoria</a>
-            </div>
-        </section>
-
-        <section class="footer">
-            <ul class="social-icons">
-                <li><a href="">linkedin</a></li>
-                <li><a href="">github</a></li>
-                <li><a href="">facebook</a></li>
-                <li><a href="">facebook</a></li>
-            </ul>
-        </section>
+        
+        <script>
+            (function($){
+                $('[data-aside]').on('click', function(){
+                    var _this = $(this);
+                    $('.content-aside.'+_this.data('aside')).addClass('active').slideDown();
+                });
+                $('.close-aside').on('click', function(){
+                    $(this).parents('.content-aside').removeClass('active').slideUp();
+                });
+            })(jQuery);
+        </script>
     </body>
 </html>
