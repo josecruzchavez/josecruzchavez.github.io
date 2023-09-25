@@ -75,7 +75,7 @@
 
             <section class="content-aside servicios">
                 <div class="container-fluid">
-                    <div class="p-2">
+                    <div class="pt-4 pb-4 pl-2 pr-2">
                         <div class="close" style="float:right;">
                             <a href="#" class="close-aside"><i class="fa-regular fa-circle-xmark"></i></a>
                         </div>
@@ -140,7 +140,7 @@
 
             <section class="content-aside asesoria">
                 <div class="container-fluid">
-                    <div class="p-2">
+                    <div class="pt-4 pb-4 pl-2 pr-2">
                         <div class="close" style="float:right;">
                             <a href="#" class="close-aside"><i class="fa-regular fa-circle-xmark"></i></a>
                         </div>
@@ -221,9 +221,11 @@
                 $('[data-aside]').on('click', function(){
                     var _this = $(this);
                     $('.content-aside.'+_this.data('aside')).addClass('active').slideDown();
+                    $('body').addClass('outside');
                 });
                 $('.close-aside').on('click', function(){
                     $(this).parents('.content-aside').removeClass('active').slideUp();
+                    $('body').removeClass('outside');
                 });
             })(jQuery);
         </script>
