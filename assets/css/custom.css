@@ -48,3 +48,5 @@ body.outside {overflow:hidden;}
     --bs-btn-disabled-border-color: #fd7128;
     --bs-gradient: none;
 }
+
+.img-certificated img {width:100%; max-width:60px;}
