@@ -1,0 +1,67 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+
+const posts = await getCollection("service");
+const last_posts = posts.filter(post => ['asesoria.md', 'soporte.md'].includes(post.id));
+
+import miJson from './proyectos.json';
+// Obteniendo solo los últimos elementos
+const proyectos = miJson.slice(0, 2);
+
+---
+
+<BaseLayout sideBarActiveItemID="home" homeSchema="true">
+  <div class="pb-12 mt-5">
+    <div class="text-5xl font-bold">José Cruz Chávez</div>
+    <div class="text-xl py-3 font-bold">Technical Lead & Fullstack Magento | Adobe Commerce Certificated Developer</div>
+    <div class="py-2">
+      <text class="text-lg">
+        Desarrollador con amplia experiencia en la creación, personalización y mantenimiento de plataformas de comercio electrónico basadas en Magento 2. Competente en el desarrollo de módulos personalizados y la implementación de funcionalidades avanzadas para optimizar la experiencia de usuario y mejorar la eficiencia operativa de las tiendas en línea. Experto en migraciones de Magento 1 a Magento 2, garantizando una transición fluida y sin interrupciones que incluye la planificación, transferencia de datos y ajuste de extensiones.
+      </text>
+    </div>
+    <div class="mt-8">
+      
+      <a class="btn btn-outline" target="_blank" href="https://www.credly.com/badges/1886525f-36b8-49e3-8c80-d4a18bba5014/linked_in_profile"><svg width="18px" height="18px" viewBox="-23.5 0 303 303" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M144.852 90.67v172.192l-16.933 10.349-16.946-10.404V90.803l-43.878 27.016v147.255l60.824 37.217 61.339-37.482V117.725L144.852 90.67zM127.919 0L0 77.502v147.274l33.223 19.572V97.06l94.722-57.596 94.81 57.512.391.223-.042 146.929L256 224.776V77.502L127.919 0z" fill="#EC6737"/></svg> Ver certificación</a>
+      <a class="btn btn-outline" target="_blank" href="mailto:josecruzchavez10@gmail.com"><svg width="18px" height="18px" viewBox="-23.5 0 303 303" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid"><path d="M144.852 90.67v172.192l-16.933 10.349-16.946-10.404V90.803l-43.878 27.016v147.255l60.824 37.217 61.339-37.482V117.725L144.852 90.67zM127.919 0L0 77.502v147.274l33.223 19.572V97.06l94.722-57.596 94.81 57.512.391.223-.042 146.929L256 224.776V77.502L127.919 0z" fill="#EC6737"/></svg> Contacto</a>
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Proyectos Recientes</div>
+  </div>
+
+  {proyectos.map((item) => (
+    <HorizontalCard
+    title={item.code}
+    img={item.img}
+    desc={item.title}
+    url={item.link}
+    badge="Free"
+    />
+    <div class="divider my-0"></div>
+  ))}
+ 
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Servicios Destacados</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/servicios/" + post.slug}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  }
+</BaseLayout>

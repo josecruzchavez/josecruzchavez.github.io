@@ -1,0 +1,74 @@
+[
+    {
+        "type" : "free",
+        "price" : "$ 0.00",
+        "code" : "GDW_WidgetZendesk",
+        "title" : "Agrega el chat de Zendesk o Zopim en Magento2",
+        "link" : "https://github.com/josecruzchavez/GDW_WidgetZendesk/",
+        "img" : "https://php.gdw.mx/github_assets/gdw_widgetzendesk/gdw_widgetzendesk_01.jpg"
+    },
+    {
+        "type" : "free",
+        "price" : "$ 0.00",
+        "code" : "GDW_Faqs",
+        "title" : "Preguntas frecuentes (FAQs) para Magento2",
+        "link" : "https://github.com/josecruzchavez/GDW_Faqs/",
+        "img" : "https://php.gdw.mx/github_assets/gdw_faqs/gdw_faqs_01.jpg"
+    },   
+    {
+        "type" : "free",
+        "price" : "$ 0.00",
+        "code" : "GDW_SeoCustomRobots",
+        "title" : "Personaliza la meta etiqueta Robots",
+        "link" : "https://github.com/josecruzchavez/GDW_SeoCustomRobots/",
+        "img" : "https://php.gdw.mx/github_assets/gdw_seocustomrobots/gdw_seocustomrobots_01.jpg"
+    },
+    {
+        "type" : "free",
+        "price" : "$ 0.00",
+        "code" : "GDW_AddCodeStore",
+        "title" : "Agregar código de la tienda en la tag body",
+        "link" : "https://github.com/josecruzchavez/GDW_AddCodeStore",
+        "img" : "https://php.gdw.mx/github_assets/gdw_addcodestore/gdw_add_code_store.jpg"
+    },
+    {
+        "type" : "free",
+        "price" : "$ 0.00",
+        "code" : "GDW_RmProductsBySkuPath",
+        "title" : "Eliminar productos por Grupo de SKU desde consola",
+        "link" : "https://github.com/josecruzchavez/GDW_RmProductsBySkuPath",
+        "img" : "https://php.gdw.mx/github_assets/gdw_rmproductsbyskupath/gdw_rmproductsbyskupath_001.jpg"
+    },
+    {
+        "type" : "free",
+        "price" : "$ 0.00",
+        "code" : "GDW_OpenGraph",
+        "title" : "GDW OpenGraph para Magento 2",
+        "link" : "https://github.com/josecruzchavez/GDW_OpenGraph",
+        "img" : "https://php.gdw.mx/github_assets/gdw_opengraph/gdw_open_graph_base_01.jpg"
+    },
+    {
+        "type" : "free",
+        "price" : "$ 0.00",
+        "code" : "GDW_DisableWelcomeEmail",
+        "title" : "Deshabilitar Email de Bienvinida",
+        "link" : "https://github.com/josecruzchavez/GDW_DisableWelcomeEmail",
+        "img" : "https://php.gdw.mx/github_assets/gdw_disablewelcomeemail/gdw_disablewelcomeemail.jpg"
+    },
+    {
+        "type" : "free",
+        "price" : "$ 0.00",
+        "code" : "GDW_Stripemx",
+        "title" : "Cobrar a Meses sin intereses con Stripe",
+        "link" : "https://github.com/josecruzchavez/GDW_Stripemx",
+        "img" : "https://php.gdw.mx/github_assets/gdw_stripemx/gdw_stripemx_01.jpg"
+    },
+    {
+        "type" : "free",
+        "price" : "$ 0.00",
+        "code" : "GDW_Core",
+        "title" : "Módulo base GDW",
+        "link" : "https://github.com/josecruzchavez/GDW_Core",
+        "img" : "https://php.gdw.mx/github_assets/gdw_core/gdw_core_01.jpg"
+    }
+]
