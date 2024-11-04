@@ -1,2 +1,2 @@
 # josecruzchavez.com
-Bienvenidoa mi sitio web personal :)
+Bienvenido a mi sitio web personal :)
